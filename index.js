@@ -8,7 +8,7 @@ app.use(cors());
 
 app.use("/api",datarouter);
 
-app.listen( 8080,()=>{
+app.listen(process.env.PORT||8080,()=>{
     console.log("app is running");
     //console.log(process.env.PORT)
 })
